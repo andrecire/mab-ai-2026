@@ -1,0 +1,89 @@
+{
+  "status": "Illustrative design. Partner participation and certificate requirements are under discussion.",
+  "courses": [
+    {
+      "id": "google",
+      "partner": "Google",
+      "label": "Agentic AI",
+      "title": "Agentic AI with Gemini",
+      "objective": "Design an AI agent that breaks a business task into steps, uses tools and checks its results.",
+      "assignment": "Build a Gemini-based agent that gathers information from a supplied business dataset, compares options and drafts a recommendation. Test its tool choices and require human approval before any action.",
+      "contribution": "A practitioner could propose a business task and review the agent’s decisions and performance.",
+      "transfer": "Compare how planning, tool use and evaluation carry across different agent platforms.",
+      "tools": "Google Gemini",
+      "sources": [
+        {
+          "title": "Gemini tool use and function calling",
+          "url": "https://ai.google.dev/gemini-api/docs/function-calling"
+        }
+      ]
+    },
+    {
+      "id": "microsoft",
+      "partner": "Microsoft",
+      "label": "Agents & automation",
+      "title": "AI agents and workflow automation",
+      "objective": "Design a workflow that uses AI with explicit operating limits and appropriate human oversight.",
+      "assignment": "Prototype a service-request workflow. Test routine cases and failures, and identify the points that require human review.",
+      "contribution": "A practitioner could co-teach an applied session and review the workflow design.",
+      "transfer": "Explain which design principles remain useful when the platform or automation tool changes.",
+      "tools": "Microsoft Copilot Studio · Power Automate",
+      "sources": [
+        {
+          "title": "Microsoft Copilot Studio",
+          "url": "https://www.microsoft.com/en-us/copilot/products/copilot-studio"
+        },
+        {
+          "title": "Power Automate",
+          "url": "https://learn.microsoft.com/power-automate/copilot-overview"
+        }
+      ]
+    },
+    {
+      "id": "sas",
+      "partner": "SAS",
+      "label": "Analytics & decisions",
+      "title": "Predictive analytics and decision support",
+      "objective": "Connect a validated model to a management decision and explain the limits of the evidence.",
+      "assignment": "Build and validate a prediction model, then recommend a decision rule and explain its likely tradeoffs.",
+      "contribution": "A practitioner could contribute a business case and review the interpretation of results.",
+      "transfer": "Compare a predictive model with a simpler baseline before choosing a more complex solution.",
+      "tools": "SAS Viya",
+      "sources": [
+        {
+          "title": "SAS Viya",
+          "url": "https://www.sas.com/en_us/software/viya.html"
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "operations",
+      "label": "Operations",
+      "question": "How could a service team reduce delays?",
+      "foundation": "Define the service problem, inspect the available data and choose measures of success.",
+      "courses": "Test a forecast, prototype an assistant for service requests, and compare the approaches against a simple baseline.",
+      "project": "Refine the solution after a practitioner design review. Test failure cases and decide where human review belongs.",
+      "evidence": "Present an analysis, a tested prototype and a business case that explains uses and limitations."
+    },
+    {
+      "id": "marketing",
+      "label": "Marketing",
+      "question": "How could a team understand and respond to customer feedback?",
+      "foundation": "Define the customer question and review the quality and appropriate use of feedback data.",
+      "courses": "Compare ways to classify feedback and summarize recurring themes, checking errors and unsupported conclusions.",
+      "project": "Use practitioner feedback to design a workflow for reviewing insights before a team acts on them.",
+      "evidence": "Present an evaluated prototype and explain which customer decisions the evidence can support."
+    },
+    {
+      "id": "finance",
+      "label": "Financial services",
+      "question": "How could a team make internal information easier to find?",
+      "foundation": "Define an internal knowledge task and identify appropriate documents, access limits and evaluation criteria.",
+      "courses": "Compare retrieval and answer-generation approaches. Test whether responses are supported by the source material.",
+      "project": "Review the design with a practitioner, document failure cases and retain human review for consequential decisions.",
+      "evidence": "Present a tested information assistant, an evaluation report and a clear account of its operating limits."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+```{=html}
+<div class="slide-footer"><img src="assets/images/utsc-management.png" alt="University of Toronto Scarborough Management"></div>
+```

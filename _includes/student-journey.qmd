@@ -1,0 +1,35 @@
+```{=html}
+<div class="student-journey" id="student-journey" aria-label="Proposed student journey from foundational courses to a company">
+  <div class="journey-toolbar"><p>Management student → AI-ready professional</p><button type="button" id="journey-play">▶ Play journey</button></div>
+  <div class="journey-track" aria-hidden="true"><div class="journey-track-fill"></div><span class="journey-stop" style="left:0%"></span><span class="journey-stop" style="left:32.98%"></span><span class="journey-stop" style="left:69.68%"></span><span class="journey-stop" style="left:100%"></span></div>
+  <div class="journey-student" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="18" r="8" fill="#f4c7a1"/><path d="M10 43v-5c0-9 28-9 28 0v5" fill="#1e3765"/><path d="m7 11 17-8 17 8-17 8Z" fill="#007fa3"/><path d="M36 13v13" stroke="#007fa3" stroke-width="2"/></svg></div>
+  <div class="journey-cards">
+    <div class="student-stage is-current" data-journey-card="0">
+      <button class="journey-stage-heading" data-journey-step="0" aria-pressed="true"><span>01</span><strong>Foundations</strong></button>
+      <svg class="foundation-books" viewBox="0 0 150 85" aria-hidden="true"><rect x="20" y="50" width="105" height="21" rx="5" fill="#1e3765"/><path d="M31 60h80" stroke="white" stroke-width="3"/><rect x="29" y="25" width="105" height="21" rx="5" fill="#007fa3"/><path d="M40 35h80" stroke="white" stroke-width="3"/><rect x="17" y="1" width="105" height="21" rx="5" fill="#b9dfe9"/><path d="M28 11h80" stroke="#007fa3" stroke-width="3"/></svg>
+      <div class="foundation-course">Business problems</div><div class="foundation-course">Data literacy</div><div class="foundation-course">Responsible AI</div>
+      <p class="stage-small">A shared starting point</p>
+    </div>
+    <div class="student-stage" data-journey-card="1">
+      <button class="journey-stage-heading" data-journey-step="1" aria-pressed="false"><span>02</span><strong>Learn with industry</strong></button>
+      <button class="journey-course" data-course="google" aria-haspopup="dialog"><span class="journey-company"><span class="google-mark" aria-hidden="true">G</span>Google</span><span class="journey-tool"><strong>Agentic AI</strong><small>Gemini <span aria-hidden="true">✦</span></small></span></button>
+      <button class="journey-course" data-course="microsoft" aria-haspopup="dialog"><span class="journey-company"><span class="microsoft-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Microsoft</span><span class="journey-tool"><strong>Agents &amp; automation</strong><small>Copilot Studio<br>Power Automate</small></span></button>
+      <button class="journey-course" data-course="sas" aria-haspopup="dialog"><span class="journey-company sas-name">SAS</span><span class="journey-tool"><strong>Analytics &amp; decisions</strong><small>SAS Viya</small></span></button>
+      <p class="stage-small">Click a course to see an example</p>
+    </div>
+    <div class="student-stage" data-journey-card="2">
+      <button class="journey-stage-heading" data-journey-step="2" aria-pressed="false"><span>03</span><strong>Apply &amp; test</strong></button>
+      <img class="recruiter-event" src="assets/images/recruiter-event.png" alt="Illustrative AI-generated scene: three hiring representatives meet a student at a networking event">
+      <p class="recruiter-image-note">Illustrative recruiter event</p>
+      <p class="event-message">Meet potential recruiters</p><p class="event-activities">Hackathons · showcases<br>Feedback on real work</p>
+    </div>
+    <div class="student-stage company-stage" data-journey-card="3">
+      <button class="journey-stage-heading" data-journey-step="3" aria-pressed="false"><span>04</span><strong>Join a company</strong></button>
+      <svg class="journey-building" viewBox="0 0 180 170" aria-hidden="true"><path d="M21 153h140" stroke="#b9d4df" stroke-width="4" stroke-linecap="round"/><rect x="37" y="20" width="109" height="132" rx="5" fill="#e6f1f5" stroke="#007fa3" stroke-width="3"/><path d="M37 43h109" stroke="#007fa3" stroke-width="3"/><path d="M54 58h17v17H54zm31 0h17v17H85zm31 0h13v17h-13zM54 87h17v17H54zm31 0h17v17H85zm31 0h13v17h-13z" fill="#79b3c7"/><path d="M80 151v-32h24v32" fill="#1e3765"/><path d="m68 12 7-7h35l7 7" fill="none" stroke="#1e3765" stroke-width="3"/></svg>
+      <p class="company-message">From classroom<br>to the workplace</p><p class="stage-small">Bring skills into a team</p>
+    </div>
+  </div>
+  <p id="journey-status" class="journey-status" role="status" aria-live="polite">Build a foundation in business, data and responsible AI.</p>
+</div>
+<p class="journey-proposal">Proposed pathway · Illustrative partners and tools · Employment is the intended outcome.</p>
+```

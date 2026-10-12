@@ -1,0 +1,127 @@
+---
+title: "AI, industry and the Management student experience"
+format:
+  html:
+    theme: none
+    css: [styles/shared.css, styles/explore.css]
+    toc: false
+    anchor-sections: false
+    page-layout: full
+    html-math-method: plain
+    smooth-scroll: true
+---
+
+```{=html}
+<main id="main-content">
+<header class="reading-header"><a href="index.html" class="reading-brand"><img src="assets/images/utsc-management.png" alt="University of Toronto Scarborough Management"></a><a class="presentation-link" href="index.html">Open the presentation ↗</a></header>
+<nav class="reading-nav" aria-label="Explore sections"><a href="#programs">AI programs</a><a href="#industry">Industry & recruitment</a><a href="#certificate">Certificate concept</a><a href="#journey">Student journey</a><a href="#sources">Sources</a></nav>
+<div class="reading-intro"><p class="small-label">Management Advisory Board · October 14, 2026</p><h1>AI, industry and the<br>Management student experience</h1><p>Ideas for reimagining recruitment and an AI certificate for current and prospective UTSC Management students.</p><p class="byline">Prof. Andre Cire</p></div>
+```
+
+## AI programs in Toronto and Ontario {#programs}
+
+Ontario already offers several ways to study AI. These selected examples serve different learners and lead to different credentials. They provide context for discussing a pathway within undergraduate Management.
+
+```{=html}
+<form class="directory-controls" role="search" aria-label="Filter AI programs" onsubmit="return false">
+<label>Search programs<input type="search" id="program-search" placeholder="Institution, program or city" autocomplete="off"></label>
+<label>Location<select id="region-filter"><option value="all">All Ontario</option><option value="GTA">Toronto / GTA providers</option><option value="Ontario">Elsewhere in Ontario</option></select></label>
+<label>Credential<select id="category-filter"><option value="all">All credentials</option><option>Undergraduate</option><option>Master’s</option><option>Graduate certificate</option><option>Continuing education</option></select></label>
+<button type="reset" class="text-button">Reset</button>
+</form>
+<p id="program-count" class="directory-count" role="status" aria-live="polite">12 selected offerings · Research checked October 12, 2026</p>
+```
+
+{{< include _includes/directory.qmd >}}
+
+```{=html}
+<p id="directory-empty" hidden>No programs match these filters. Try another search or reset the filters.</p>
+<div class="directory-pagination" hidden><button id="previous-programs" type="button">Previous</button><span id="program-page"></span><button id="next-programs" type="button">Next</button></div>
+<p class="reading-caption">A selected starting set, not a census or ranking. Location can describe a provider’s base rather than a verified delivery site. Unverified durations, delivery formats and industry arrangements are omitted. Their omission does not establish that a program lacks industry engagement.</p>
+```
+
+## Our industry connections {#industry}
+
+UTSC Management's co-op relationships give us a foundation for bringing industry further into the classroom. Its co-op model includes 12 months of paid work experience within a four-year undergraduate degree. [Management co-op overview](https://utsc.utoronto.ca/mgmt/why-co-op)
+
+```{=html}
+<figure class="reading-photo"><button class="photo-button" data-photo="ibm" aria-label="Enlarge the MGOC15 photographs" aria-haspopup="dialog"><img src="assets/images/mgoc15-ibm.png" alt="MGOC15 students and IBM Canada practitioners in teaching sessions, a computer lab and at IBM Canada."></button><figcaption>MGOC15 with IBM Canada. Photograph supplied in the October 2026 MAB presentation.</figcaption></figure>
+```
+
+### MGOC15 with IBM Canada
+
+The MAB materials describe Business Data Analytics as co-developed and co-taught by Andre Cire with IBM leaders Manav Gupta and Sadi Khan, including learning on campus and inside IBM Canada. The photographs include a session on retrieval-augmented generation evaluation and AI governance.
+
+The course is an existing example of collaboration. The proposed certificate would explore whether that kind of engagement could extend across a coherent sequence of courses. Partner commitments to the certificate remain under discussion.
+
+### Reimagining recruitment
+
+We could show prospective students what learning with industry would actually involve. A sample class or student demonstration can connect the recruitment message to a concrete course experience.
+
+<details class="reading-disclosure"><summary>A practitioner-led sample class</summary><p>At an applicant event, a practitioner and faculty member could introduce a business challenge and discuss how students would investigate it during a course.</p></details>
+
+<details class="reading-disclosure"><summary>Student work that applicants can inspect</summary><p>With permission, show a project and explain how the student tested its results, responded to feedback and documented its limitations. This is an illustrative recruitment activity, not a claim of measured enrollment gains.</p></details>
+
+<details class="reading-disclosure"><summary>A visible path through the degree</summary><p>Explain where AI learning, practitioner interaction and assessed project work would fit. Any pathway needs to account for prerequisites and the timing of full-time co-op work terms.</p></details>
+
+Co-op jobs remain subject to the normal application and recruitment process. [Management student FAQ](https://www.utsc.utoronto.ca/mgmt/student-faq)
+
+## AI certificate concept {#certificate}
+
+A proposed **6–8 month pathway for Management students**, with courses developed and taught alongside industry. The duration comes from the MAB concept notes. Academic requirements and participation are still under discussion.
+
+The common foundation would cover business problem definition, data literacy, model evaluation and responsible AI. Students would need suitable technical preparation, with a preparation route for those with limited programming experience.
+
+### Illustrative course areas
+
+The combinations below are examples for discussion: Google Agentic AI with Gemini, Microsoft agents and automation, and SAS analytics and decisions. Existing IBM participation in MGOC15 does not establish a commitment to this certificate. Google, Microsoft and SAS are prospective examples, not confirmed certificate partners.
+
+{{< include _includes/course-details.qmd >}}
+
+### Learning across technologies
+
+Students would compare approaches and explain their choices, reusing ideas across the course areas. A shared project would connect the courses to a business problem. It would not require combining every vendor's products.
+
+Faculty would determine academic learning outcomes and grades, with practitioner feedback contributing to student work. Assessment could consider problem formulation, testing, responsible use and communication to a business audience.
+
+### Decisions still to make
+
+The credential name and issuing unit, credit status, prerequisites, number of courses, workload and timing need further design. So do faculty capacity, technology access and a sustainable commitment from partners. An academic certificate and a vendor certification would be separate credentials with their own requirements. Course participation would not imply a guaranteed job.
+
+## An illustrative student journey {#journey}
+
+Choose a business setting to see how the same academic structure could support different projects. These are educational scenarios, not descriptions of existing partner projects.
+
+```{=html}
+<label class="scenario-control">Business setting<select id="scenario-select"><option value="operations">Operations</option><option value="marketing">Marketing</option><option value="finance">Financial services</option></select></label>
+<div id="scenario-content" class="scenario-content" aria-live="polite">
+<h3 id="scenario-question">How could a service team reduce delays?</h3>
+<ol class="reading-journey"><li><h4>Foundations</h4><p data-scenario="foundation">Define the service problem, inspect the available data and choose measures of success.</p></li><li><h4>Partner courses</h4><p data-scenario="courses">Test a forecast, prototype an assistant for service requests, and compare the approaches against a simple baseline.</p></li><li><h4>Applied project</h4><p data-scenario="project">Refine the solution after a practitioner design review. Test failure cases and decide where human review belongs.</p></li><li><h4>Demonstration of learning</h4><p data-scenario="evidence">Present an analysis, a tested prototype and a business case that explains uses and limitations.</p></li></ol>
+</div>
+```
+
+## Advice from the board
+
+Would this pathway help attract Management students and prepare graduates you would want to hire?
+
+What capability would you most want students to demonstrate? Where could partners make the most useful contribution to teaching and feedback?
+
+This webpage supports exploration and discussion. It does not collect responses or present shared polling results.
+
+## Sources and scope {#sources}
+
+Each program entry links to its official institutional source. Research was checked on **October 12, 2026**. Offerings, requirements and delivery arrangements can change. Consult the institution's current catalog for enrollment decisions.
+
+- UTSC Management co-op: [program overview](https://utsc.utoronto.ca/mgmt/why-co-op) and [student FAQ](https://www.utsc.utoronto.ca/mgmt/student-faq).
+- MGOC15 course example and the initial certificate concept: departmental **MAB October 2026 draft**, slides 13–14 and associated speaker notes. The full departmental deck is not reproduced here.
+- Additional context for the U of T continuing education listings: [School of Continuing Studies overview](https://learn.utoronto.ca/curiousu-blog/curiosity/how-scs-integrating-ai-lifelong-learning). Current course counts, prices and schedules are not asserted here.
+- A broader list of recognized master's offerings is available from the [Vector Institute](https://vectorinstitute.ai/research-talent/students/ai-masters-programs/).
+
+Industry engagement already exists in several programs. A coherent undergraduate Management pathway with recurring practitioner involvement is a design hypothesis to explore, not a verified claim of uniqueness.
+
+<footer class="reading-footer"><a href="index.html">Return to the five-slide presentation</a><span>UTSC Management · October 2026</span><button class="text-button" type="button" id="print-reading">Print this reading view</button></footer>
+
+```{=html}
+</main>
+```
+

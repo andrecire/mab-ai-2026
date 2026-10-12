@@ -1,0 +1,18 @@
+project:
+  type: default
+  output-dir: docs
+  render:
+    - index.qmd
+    - explore.qmd
+  pre-render:
+    - python3 scripts/prepare.py
+  resources:
+    - assets/
+    - scripts/interactions.js
+    - scripts/content-data.js
+    - data/
+lang: en
+pagetitle: "AI, industry and the Management student experience"
+description: "UTSC Management Advisory Board, October 14, 2026. Explore Ontario AI programs and a proposed industry-connected certificate."
+include-after-body: _includes/interaction-shell.html
+

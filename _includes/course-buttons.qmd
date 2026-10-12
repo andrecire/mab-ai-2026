@@ -1,0 +1,3 @@
+```{=html}
+<div class="course-choices"><button class="course-pick" data-course="google" aria-haspopup="dialog"><strong>Google</strong><span>Agentic AI</span><span class="course-plus" aria-hidden="true">+</span></button><button class="course-pick" data-course="microsoft" aria-haspopup="dialog"><strong>Microsoft</strong><span>Agents &amp; automation</span><span class="course-plus" aria-hidden="true">+</span></button><button class="course-pick" data-course="sas" aria-haspopup="dialog"><strong>SAS</strong><span>Analytics &amp; decisions</span><span class="course-plus" aria-hidden="true">+</span></button></div>
+```

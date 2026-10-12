@@ -1,0 +1,18 @@
+```{=html}
+<details class="course-entry"><summary><strong>Google</strong><span>Agentic AI with Gemini</span></summary><div class="entry-body"><p class="concept-note">Illustrative course area. Google participation in this certificate is proposed.</p>
+<h4>Tools</h4><p>Google Gemini</p>
+<h4>Learning objective</h4><p>Design an AI agent that breaks a business task into steps, uses tools and checks its results.</p>
+<h4>Example student assignment</h4><p>Build a Gemini-based agent that gathers information from a supplied business dataset, compares options and drafts a recommendation. Test its tool choices and require human approval before any action.</p>
+<h4>Practitioner involvement</h4><p>A practitioner could propose a business task and review the agent’s decisions and performance.</p>
+<div class="discussion-note"><h4>Learning across technologies</h4><p>Compare how planning, tool use and evaluation carry across different agent platforms.</p></div><p class="source-line">Official tool information: <a href="https://ai.google.dev/gemini-api/docs/function-calling" target="_blank" rel="noopener noreferrer">Gemini tool use and function calling</a></p></div></details><details class="course-entry"><summary><strong>Microsoft</strong><span>AI agents and workflow automation</span></summary><div class="entry-body"><p class="concept-note">Illustrative course area. Microsoft participation in this certificate is proposed.</p>
+<h4>Tools</h4><p>Microsoft Copilot Studio · Power Automate</p>
+<h4>Learning objective</h4><p>Design a workflow that uses AI with explicit operating limits and appropriate human oversight.</p>
+<h4>Example student assignment</h4><p>Prototype a service-request workflow. Test routine cases and failures, and identify the points that require human review.</p>
+<h4>Practitioner involvement</h4><p>A practitioner could co-teach an applied session and review the workflow design.</p>
+<div class="discussion-note"><h4>Learning across technologies</h4><p>Explain which design principles remain useful when the platform or automation tool changes.</p></div><p class="source-line">Official tool information: <a href="https://www.microsoft.com/en-us/copilot/products/copilot-studio" target="_blank" rel="noopener noreferrer">Microsoft Copilot Studio</a> · <a href="https://learn.microsoft.com/power-automate/copilot-overview" target="_blank" rel="noopener noreferrer">Power Automate</a></p></div></details><details class="course-entry"><summary><strong>SAS</strong><span>Predictive analytics and decision support</span></summary><div class="entry-body"><p class="concept-note">Illustrative course area. SAS participation in this certificate is proposed.</p>
+<h4>Tools</h4><p>SAS Viya</p>
+<h4>Learning objective</h4><p>Connect a validated model to a management decision and explain the limits of the evidence.</p>
+<h4>Example student assignment</h4><p>Build and validate a prediction model, then recommend a decision rule and explain its likely tradeoffs.</p>
+<h4>Practitioner involvement</h4><p>A practitioner could contribute a business case and review the interpretation of results.</p>
+<div class="discussion-note"><h4>Learning across technologies</h4><p>Compare a predictive model with a simpler baseline before choosing a more complex solution.</p></div><p class="source-line">Official tool information: <a href="https://www.sas.com/en_us/software/viya.html" target="_blank" rel="noopener noreferrer">SAS Viya</a></p></div></details>
+```
