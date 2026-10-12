@@ -7,6 +7,13 @@
   const programChoices = [...document.querySelectorAll('.program-pick')];
   let programPage = 0;
 
+  // Reveal otherwise captures slight finger movement and can cancel native taps.
+  // Keep slide swipes on the background, but let controls handle their own touch.
+  // https://revealjs.com/touch-navigation/
+  document.querySelectorAll('.reveal button, .reveal a, #program-panel').forEach(element => {
+    element.setAttribute('data-prevent-swipe', '');
+  });
+
   function showProgram(trigger) {
     const template = document.getElementById(`panel-program-${trigger.dataset.program}`);
     if (!programPanel || !template) return;
@@ -23,6 +30,8 @@
     const selected = programChoices.find(button => button.getAttribute('aria-pressed') === 'true');
     if (selected?.hidden) showProgram(programChoices[programPage * 4]);
   }
+  // Bind to native buttons so taps do not depend on bubbling to document on iOS.
+  programChoices.forEach(button => button.addEventListener('click', () => showProgram(button)));
   document.querySelector('#programs-back')?.addEventListener('click', () => changeProgramPage(-1));
   document.querySelector('#programs-forward')?.addEventListener('click', () => changeProgramPage(1));
   // Let keyboard users scroll and expand the panel without advancing a slide.
@@ -112,7 +121,9 @@
     if (document.readyState === 'complete') bindJourney();
     else window.addEventListener('load', bindJourney, {once:true});
     document.addEventListener('visibilitychange', () => { if (document.hidden) pauseJourney(); });
-    reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) pauseJourney(); });
+    const onMotionChange = () => { if (reducedMotion.matches) pauseJourney(); };
+    if (reducedMotion.addEventListener) reducedMotion.addEventListener('change', onMotionChange);
+    else reducedMotion.addListener(onMotionChange);
   }
 
   function openDetail(templateId, trigger) {
@@ -132,11 +143,9 @@
     dialog.scrollTop = 0;
     dialog.querySelector('.dialog-close').focus();
   }
-  document.addEventListener('click', event => {
-    const program = event.target.closest('[data-program]');
-    const course = event.target.closest('[data-course]');
-    const photo = event.target.closest('[data-photo]');
-    if (program) showProgram(program);
+  document.querySelectorAll('[data-course], [data-photo]').forEach(button => button.addEventListener('click', () => {
+    const course = button.matches('[data-course]') ? button : null;
+    const photo = button.matches('[data-photo]') ? button : null;
     if (course) openDetail(`detail-course-${course.dataset.course}`, course);
     if (photo) {
       opener = photo;
@@ -155,7 +164,7 @@
       dialog.showModal();
       dialog.querySelector('.dialog-close').focus();
     }
-  });
+  }));
   dialog?.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
   dialog?.addEventListener('click', event => {
     const box = dialog.getBoundingClientRect();
